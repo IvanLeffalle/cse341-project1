@@ -19,6 +19,7 @@ const getContactById = async (req, res) => {
         const db = mongodb.getDb(); 
         const result = await db.collection('contacts').find({ _id: contactId }); 
         const contacts = await result.toArray();
+
         if (contacts.length > 0) {
             res.setHeader('Content-Type', 'application/json');
             res.status(200).json(contacts[0]);
@@ -29,6 +30,7 @@ const getContactById = async (req, res) => {
         res.status(500).json({ error: 'Failed to fetch contact' });
     }
 };
+
 
 module.exports = {
     getContacts,
