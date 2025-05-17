@@ -5,7 +5,7 @@
     "description": "API documentation for the Contacts application",
     "version": "1.0.0"
   },
-  "host": "https://project1-rxlf.onrender.com",
+  "host": "project1-rxlf.onrender.com",
   "basePath": "/",
   "schemes": [
     "https",
