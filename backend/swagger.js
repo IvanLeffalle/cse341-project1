@@ -6,7 +6,7 @@ const doc = {
         description: 'API documentation for the Contacts application',
     },
     host: ' https://project1-rxlf.onrender.com',
-    schemes: ['http','https'],
+    schemes: ['https','http'],
 }
 
 const outputFile = './swagger_output.json';
