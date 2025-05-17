@@ -4,7 +4,38 @@
 GET http://localhost:3000/contacts HTTP/1.1
 
 ###Get a contact by id
-GET http://localhost:3000/contacts/681fa9ca81dccff660afa126 HTTP/1.1
+GET http://localhost:3000/contacts/6828a5ccb0b3882021219171 HTTP/1.1
+
+
+###Create a contact
+POST http://localhost:3000/contacts HTTP/1.1
+
+
+### Crear un contacto
+POST http://localhost:3000/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Victoria",
+    "lastName": "User",
+    "email": "test@test.com",
+    "favoriteColor": "green",
+    "birthday": "02/02/2002"
+}
+
+###Update a contact
+PUT http://localhost:3000/contacts/681fa9ca81dccff660afa126 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Victoria",
+    "lastName": "centurion",
+    "email": "test@test.com",
+    "favoriteColor": "Black",
+    "birthday": "02/02/2022"
+}
+###Delete a contact
+DELETE http://localhost:3000/contacts/6828a5ccb0b3882021219171 HTTP/1.1
 
 //PRODUCTION
 ###Get all contacts
@@ -12,4 +43,33 @@ GET https://project1-rxlf.onrender.com/contacts HTTP/1.1
 
 ###Get a contact by id
 GET https://project1-rxlf.onrender.com/contacts/681fa9ca81dccff660afa126 HTTP/1.1
+
+###Create a contact
+POST https://project1-rxlf.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "New",
+    "lastName": "User",
+    "email": "new.user@test.com",
+    "favoriteColor": "green",
+    "birthday": "02/02/1998"
+}
+
+###Update a contact
+PUT https://project1-rxlf.onrender.com/contacts/681fa9ca81dccff660afa126 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Testing",
+    "lastName": "user",
+    "email": "test@user.com",
+    "favoriteColor": "Black",
+    "birthday": "02/02/2022"
+}
+
+###Delete a contact
+DELETE https://project1-rxlf.onrender.com/contacts/681fa9ca81dccff660afa126 HTTP/1.1
+
+
 
